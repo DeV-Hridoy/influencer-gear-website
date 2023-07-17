@@ -1,0 +1,148 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 60px;
+}
+
+.btn-primary {
+  padding: 10px 24px;
+  gap: 8px;
+  border-radius: 30px;
+  background: #e02c6d;
+  color: white;
+  border: none;
+}
+
+/* header section */
+/* navbar section */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: #3a3a3a;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.nav-icon > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-icon li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Header content */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+}
+
+.header-text {
+  width: 500px;
+}
+
+.header-text h2 {
+  color: #3a3a3a;
+  font-size: 2.55rem;
+  font-weight: 700;
+}
+
+.header-text p {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header-pic {
+  background-image: url("../images/Circledesign.svg");
+}
+
+.header-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  margin: 20px 80px;
+}
+
+
+/* main section */
+
+.grid-img-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-img-info >.card img{
+    width: 100%;
+}
+
+/* media Query */
+
+/* for mobile */
+
+@media screen and (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    padding-left: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-content {
+    flex-direction: column-reverse;
+  }
+  .header-pic img {
+    width: 100%;
+  }
+  .header-logos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+  .header-text {
+    text-align: center;
+  }
+  .grid-img-info{
+    grid-template-columns: repeat(1,1fr);
+}
+
+  /* .header-logos img{
+    width: 70%;
+} */
+
+  /* .header-text h2 {
+    text-align: center;
+    flex-direction: column;
+
+
+} */
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    padding-left: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
